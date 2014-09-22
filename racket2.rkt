@@ -22,8 +22,8 @@
 (define curry3
   (lambda (f)
     (lambda (a)
-      (lambda (y)
-        (lambda (z)
+      (lambda (b)
+        (lambda (c)
           (f a b c))))))
   
 
