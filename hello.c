@@ -2,5 +2,5 @@
 
 int main() {
   printf("Hello, world!\n");
-  printf("The answer is %i",6+3);
+  printf("The answer is %i\n",6+3);
 }
