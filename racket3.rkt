@@ -41,6 +41,18 @@
 
 (define doit2
   (lambda (x)
-    (let ([a 3] [b (+ a 1)])
+    (let* ([a 3] [b (+ a 1)])
       (+ a b x))))
+
+(doit2 10)
+
+(letrec ([is-even? (lambda (n)
+                  (or (zero? n )
+                      (is-odd? (sub1 n))))]
+      [is-odd?  (lambda (n)
+                  (and (not (zero? n))
+                       (is-even? (sub1 n))))])
+  (is-odd? 1))
+
+;(letrec [(x y) (y 12)] x)
 
