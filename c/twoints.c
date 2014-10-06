@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-  int x = 3;
+  int x = 3; // a
   printf("%i\n",x);
 
   // Declare a pointer to an integer
