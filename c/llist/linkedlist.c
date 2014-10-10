@@ -26,23 +26,3 @@ void cleanup(Node *list) {
   }
 }
   
-int main() {
-
-  Node *head = NULL;
-  head = insert(3,head);
-  head = insert(5,head);
-  display(head);
-  cleanup(head);
-  /*
-  // in 'da stack
-  Node node;
-  node.value = 3;
-  printf("Value is %i\n",node.value);
-
-  // in 'da heap
-  Node *other;
-  other = malloc(sizeof(Node));
-  (*other).value = 3;
-  other->value = 3 ;  // this is shorthand for above
-  printf("Size of int is %i\n",sizeof(int));*/
-}
